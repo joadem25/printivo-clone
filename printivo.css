@@ -1,0 +1,109 @@
+body {
+    font-family: sans-serif;
+    /* overflow-x: hidden; */
+}
+
+@font-face {
+    font-family: sfFont;
+    src: url('./font/FontsFree-Net-SFProText-Regular.ttf');
+}
+
+#topNav{
+    width: 90%;
+    
+}
+
+#containerTopNav {
+    background-color: #F7F6F4;
+}
+
+#headerItemMargin1 {
+    margin-left: 5.3rem;
+}
+
+#headerItemMargin2 {
+    margin-left: 100rem;
+}
+
+.headerNav {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: sfFont;
+    
+}
+
+.headerNav a {
+    text-decoration: none;
+    color: #506683;
+    text-align: center;
+    
+    
+}
+
+.heroNav {
+
+}
+
+.heroNav a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.heroNav a:hover {
+    color: #9BA5AD;
+}
+
+#phoneNum {
+    color: #1DA1F2;
+}
+
+
+#heroSec {
+    background-color: #ECE8D9;
+    width: 100%;
+    min-height: auto;
+}
+
+#containHeroSec {
+    width: 90%;
+}
+
+#heroSec1 {
+    min-height: 350px;
+    width: 50%;
+}
+
+#printCardHand{
+    background-image: url('./images/printIvo-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 350px;
+    width: 50%;
+    background-position: 100%;
+    position: absolute;
+    right: 0;   
+}
+
+#productSec {
+    width: 90%;
+}
+
+.naira {
+    text-decoration: double line-through;
+    
+}
+
+#itemBut {
+    white-space: nowrap; 
+    width: 13rem; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #D77F81;
+    color: white;
+}
+
+div#footerText a {
+    text-decoration: none;
+    color: white;
+}

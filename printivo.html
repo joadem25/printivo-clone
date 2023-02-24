@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" id="htmBoss">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="printivo.css">
+</head>
+<body id="body" onscroll="myFunction()">
+    <!-- Top navigation bar -->
+    <div class="container-fluid" id="containerTopNav">
+        <div class="me-auto ms-auto" id="topNav">
+            <div class="headerNav row align-items-center justify-content-between p-3" >
+                <span class="col-5 d-none d-lg-flex justify-content-lg-start">
+                    <span class="col-4" ><a href="" class="">Corporate Pricing</a></span>
+                    <span class="col-4" ><a href="" class="">Discover Stores</a></span>
+                    <span class="col-4" ><a href="" class="">Track Orders</a></span>
+                </span>
+        
+                <span class="col-12 col-md-12 col-lg-7 d-sm-flex d-md-flex align-items-center justify-content-md-center justify-content-lg-end">
+                    <span class="col-7">Need help? Call:<a href="" id="phoneNum">+2348091084333</a><span> or </span><a href="" id="phoneNum">+2348091085333</a></span>
+                    <span class="col-2"><a href=""><img src="./images/WhatsApp-Logo.wine.png" alt="" width="75" height="50" class=""></a></span>
+                    <span class="col-12 col-sm-3"><a href=""><span class="border rounded-5 p-2"><img src="./images/NigerianFlag.svg" alt=""> Nigeria</span></a></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Hero Section -->
+    <div class="py-3" id="heroSec">
+        <!-- Navighation bar  -->
+        <div class="ms-auto me-auto" id="containHeroSec">   
+            <div class="container-fluid">
+                <nav class="heroNav row align-items-center justify-content-between">
+                    <div class="col-12 col-sm-8 col-md-3">
+                        <span><a href=""><img src="./images/printivoIm.svg" alt=""></a></span>
+                    </div>
+                    <div class="col-6 d-none d-lg-flex justify-content-end" style="gap:15px;">
+                        <span><a href="#">Home</a></span>
+                        <span><a href="">All Products</a></span>
+                        <span><a href="">Become a Reseller</a></span>
+                        <span><a href="">Cost Calculator</a></span>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center" style="gap: 15px;">
+                        <span><a href="">Sign in</a></span>
+                        <span><a href="">Create Account</a></span>
+                        <span><a href=""><img src="./images/cart.svg" alt=""></a></span>
+                    </div>
+                </nav>
+            </div>
+
+
+            <div class="container-fluid">
+                <div class="d-md-block d-lg-none">
+                      <button class="btn bg-light text-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        MENU
+                      </button>
+                      
+                      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <div>
+                            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                          </div>
+                          <div class="dropdown mt-3">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                              Dropdown button
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            
+    
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6" id="heroSec1">
+                        <p style="font-size: 67.2px; font-weight: 400; color: #384a62;">Quality Prints</p>
+                        <p style="font-size: 24px; font-weight: 600; color: #708095">Shipped to your doorstep</p>
+                        <p style="font-size: 16px; font-weight: 700; color: #384a62;">Would you like to print today?</p>
+                        <div>
+                            <input class="form-control form-control-lg" type="text" placeholder="Search for Business cards, T-shirts, Mugs, etc" aria-label=".form-control-lg example">
+                            <img src="./images/search.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 d-none d-md-block" id="printCardHand"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- sticky navbar -->
+    <div class="container-fluid bg-light fixed-top" id="stickyNav" style="display: none;">
+        <div class="me-auto ms-auto p-1" id="productSec">
+            <nav class="heroNav row align-items-center justify-content-between">
+                <div class="col-12 col-md-3">
+                    <span><a href=""><img src="./images/printivoIm.svg" alt=""></a></span>
+                </div>
+                <div class="col-md-6 d-none d-lg-flex justify-content-end" style="gap:15px;">
+                    <span><a href="">Home</a></span>
+                    <span><a href="">All Products</a></span>
+                    <span><a href="">Become a Reseller</a></span>
+                    <span><a href="">Cost Calculator</a></span>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center" style="gap: 15px;">
+                    <span><a href="">Sign in</a></span>
+                    <span><a href="">Create Account</a></span>
+                    <span><a href=""><img src="./images/cart.svg" alt=""></a></span>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Popular products -->
+    <div class="container-fluid py-5">
+        <div class="d-flex align-items-center justify-content-between me-auto ms-auto" id="productSec">
+            <div class=""><a href="" style="font-size: 30px; color:#384a62; text-decoration: none;">Popular Products</a></div>
+            <div class=""><a href="" style="color: #D77F81; font-size: 16px; text-decoration: none;">See All Products</a></div>
+        </div>
+        <div class="d-flex flex-wrap justify-content-center justify-content-lg-between me-auto ms-auto" style="gap: 30px;" id="productSec">
+            <div class="card" style="width: 17rem;">
+                <img src="./images/1440201227_two-sided-business-cards-by-printivo.png" class="card-img-top" alt="..." width="270" height="225">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 16px; font-weight: 700; color: #384a62;">Two-sided Business Cards</h5>
+                  <p class="card-text" style="color: #708095; font-size: 12px; font-weight: 700;">STARTING AT</p>
+                  <p style="color: #384a62;"><span class="naira">N</span> 7,700 <span style="color: #708095; font-size: 12px; font-weight: 700;">per 100</span></p>
+                  <a href="#" class="btn" id="itemBut">Browse Two-sided Business Cards</a>
+                </div>
+            </div>
+            <div class="card" style="width: 17rem;">
+                <img src="./images/prod2.png" class="card-img-top" alt="..." width="270" height="225">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 16px; font-weight: 700; color: #384a62;">A5 flyers (Single Sided)</h5>
+                  <p class="card-text" style="color: #708095; font-size: 12px; font-weight: 700;">STARTING AT</p>
+                  <p style="color: #384a62;"><span class="naira">N</span> 15,200 <span style="color: #708095; font-size: 12px; font-weight: 700;">per 100</span></p>
+                  <a href="#" class="btn" id="itemBut">Browse A5 flyers (Single Sided)</a>
+                </div>
+            </div>
+            <div class="card" style="width: 17rem;">
+                <img src="./images/prod3.png" class="card-img-top" alt="..." width="270" height="225">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 16px; font-weight: 700; color: #384a62;">Simple Mugs</h5>
+                  <p class="card-text" style="color: #708095; font-size: 12px; font-weight: 700;">STARTING AT</p>
+                  <p style="color: #384a62;"><span class="naira">N</span> 2,750 <span style="color: #708095; font-size: 12px; font-weight: 700;">per 1</span></p>
+                  <a href="#" class="btn" id="itemBut">Browse Simple Mugs</a>
+                </div>
+            </div>
+            <div class="card" style="width: 17rem;">
+                <img src="./images/prod4.jpg" class="card-img-top" alt="..." width="270" height="225">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 16px; font-weight: 700; color: #384a62;">Postcards (A6)</h5>
+                  <p class="card-text" style="color: #708095; font-size: 12px; font-weight: 700;">STARTING AT</p>
+                  <p style="color: #384a62;"><span class="naira">N</span> 11,200 <span style="color: #708095; font-size: 12px; font-weight: 700;">per 50</span></p>
+                  <a href="#" class="btn" id="itemBut">Browse Postcards (A6)</a>
+                </div>
+            </div>
+            <div class="card" style="width: 17rem;">
+                <img src="./images/prod5.png" class="card-img-top" alt="..." width="270" height="225">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 16px; font-weight: 700; color: #384a62;">Roll Up Banners (Big Base)</h5>
+                  <p class="card-text" style="color: #708095; font-size: 12px; font-weight: 700;">STARTING AT</p>
+                  <p style="color: #384a62;"><span class="naira">N</span> 27,600 <span style="color: #708095; font-size: 12px; font-weight: 700;">per 1</span></p>
+                  <a href="#" class="btn" id="itemBut">Browse Roll Up Banners (Big Base)</a>
+                </div>
+            </div>
+            <div class="card" style="width: 17rem;">
+                <img src="./images/prod6.png" class="card-img-top" alt="..." width="270" height="225">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 16px; font-weight: 700; color: #384a62;">A2 Posters</h5>
+                  <p class="card-text" style="color: #708095; font-size: 12px; font-weight: 700;">STARTING AT</p>
+                  <p style="color: #384a62;"><span class="naira">N</span> 36,000 <span style="color: #708095; font-size: 12px; font-weight: 700;">per 100</span></p>
+                  <a href="#" class="btn" id="itemBut">Browse A2 Posters</a>
+                </div>
+            </div>
+            <div class="card" style="width: 17rem;">
+                <img src="./images/prod7.png" class="card-img-top" alt="..." width="270" height="225">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 16px; font-weight: 700; color: #384a62;">Trifold Brochures</h5>
+                  <p class="card-text" style="color: #708095; font-size: 12px; font-weight: 700;">STARTING AT</p>
+                  <p style="color: #384a62;"><span class="naira">N</span> 24,000 <span style="color: #708095; font-size: 12px; font-weight: 700;">per 100</span></p>
+                  <a href="#" class="btn" id="itemBut">Browse Trifold Brochures</a>
+                </div>
+            </div>
+            <div class="card" style="width: 17rem;">
+                <img src="./images/prod8.png" class="card-img-top" alt="..." width="270" height="225">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 16px; font-weight: 700; color: #384a62;">Landscape ID Cards</h5>
+                  <p class="card-text" style="color: #708095; font-size: 12px; font-weight: 700;">STARTING AT</p>
+                  <p style="color: #384a62;"><span class="naira">N</span> 1,400 <span style="color: #708095; font-size: 12px; font-weight: 700;">per 1</span></p>
+                  <a href="#" class="btn" id="itemBut">Browse Landscape ID Cards</a>
+                </div>
+            </div>
+            <div class="card" style="width: 17rem;">
+                <img src="./images/prod9.png" class="card-img-top" alt="..." width="270" height="225">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 16px; font-weight: 700; color: #384a62;">Off White T-shirts</h5>
+                  <p class="card-text" style="color: #708095; font-size: 12px; font-weight: 700;">STARTING AT</p>
+                  <p style="color: #384a62;"><span class="naira">N</span> 3,499 <span style="color: #708095; font-size: 12px; font-weight: 700;">per 100</span></p>
+                  <a href="#" class="btn" id="itemBut">Browse Off White T-shirts</a>
+                </div>
+            </div>
+            <div class="card" style="width: 17rem;">
+                <img src="./images/prod10.png" class="card-img-top" alt="..." width="270" height="225">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 16px; font-weight: 700; color: #384a62;">A4 Branded Paper Bags</h5>
+                  <p class="card-text" style="color: #708095; font-size: 12px; font-weight: 700;">STARTING AT</p>
+                  <p style="color: #384a62;"><span class="naira">N</span> 53,000 <span style="color: #708095; font-size: 12px; font-weight: 700;">per 100</span></p>
+                  <a href="#" class="btn" id="itemBut">Browse A4 Branded Paper Bags</a>
+                </div>
+            </div>
+            <div class="card" style="width: 17rem;">
+                <img src="./images/prod11.jpeg" class="card-img-top" alt="..." width="270" height="225">
+                <div class="card-body">
+                  <h5 class="card-title" style="font-size: 16px; font-weight: 700; color: #384a62;">A4 Courier Bags Cards</h5>
+                  <p class="card-text" style="color: #708095; font-size: 12px; font-weight: 700;">STARTING AT</p>
+                  <p style="color: #384a62;"><span class="naira">N</span> 16,000 <span style="color: #708095; font-size: 12px; font-weight: 700;">per 100</span></p>
+                  <a href="#" class="btn" id="itemBut">Browse A4 Courier Bags</a>
+                </div>
+            </div>
+            <div style="width: 17rem;"></div>
+        </div>
+    </div>
+
+    <!-- Popular Categories -->
+    <div class="container-fluid">
+        <div class="me-auto ms-auto" id="productSec">
+            <div class="d-flex align-items-center justify-content-between " >
+                <div class=""><a href="" style="font-size: 30px; color:#384a62; text-decoration: none;">Popular Categories</a></div>
+                <div class=""><a href="" style="color: #D77F81; font-size: 16px; text-decoration: none;">See All Products</a></div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-between" style="gap: 30px;" >
+                <div class="card" style="width: 17rem;">
+                    <img src="./images/1473159158_Christmas-card-for-this-wonderful-season.png" class="card-img-top" alt="..." width="270" height="225">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size: 16px; font-weight: 700; color: #384a62;">Greeting Cards</h5>
+                      <p class="card-text" style="color: #708095; font-size: 12px; font-weight: 700;">STARTING AT</p>
+                      <p style="color: #384a62;"><span class="naira">N</span> 15,000 <span style="color: #708095; font-size: 12px; font-weight: 700;">per 50</span></p>
+                      <a href="#" class="btn" id="itemBut">Browse Greeting Cards</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 17rem;">
+                    <img src="./images/stickers.png" class="card-img-top" alt="..." width="270" height="225">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size: 16px; font-weight: 700; color: #384a62;">Stickers</h5>
+                      <p class="card-text" style="color: #708095; font-size: 12px; font-weight: 700;">STARTING AT</p>
+                      <p style="color: #384a62;"><span class="naira">N</span> 4,949 <span style="color: #708095; font-size: 12px; font-weight: 700;">per 75</span></p>
+                      <a href="#" class="btn" id="itemBut">Browse Stickers</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 17rem;">
+                    <img src="./images/social-media--15.png" class="card-img-top" alt="..." width="270" height="225">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font-size: 16px; font-weight: 700; color: #384a62;">Round Stickers (3.5" Diameter)</h5>
+                      <p class="card-text" style="color: #708095; font-size: 12px; font-weight: 700;">STARTING AT</p>
+                      <p style="color: #384a62;"><span class="naira">N</span> 9,900 <span style="color: #708095; font-size: 12px; font-weight: 700;">per 100</span></p>
+                      <a href="#" class="btn" id="itemBut">Browse Round Stickers (3.5" Diameter)</a>
+                    </div>
+                </div>
+                <div style="width: 17rem;"></div>
+            </div>
+        </div>
+    </div>
+
+     <div class="container-fluid py-5">
+        <div class="ms-auto me-auto" id="productSec">
+            <div class="col-12 col-md-6" >
+                <h2>Nigeria's No. 1 online print shop 👑</h2>
+                <h4>Our print services and solutions are trusted by these brands and over 15,000 other businesses in Nigeria.</h4>
+            </div>
+            <div class="col-12">
+                <img src="./images/MicrosoftLogo.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    
+    <!-- What customer's say about us -->
+
+    <div class="container-fluid" style="background-color: #EDF6FD;">
+        <div class="row align-items-center" style="min-height: 350px;">
+            <div class="me-auto ms-auto" id="productSec">
+                <div class="col-12" style="font-size: 30px;">What Customers Say About Us 🙌🏾</div>
+                <div class="col-12 container-fluid d-flex justify-content-between py-4 align-items-center flex-column flex-lg-row" style="gap: 30px;">
+                    <div>
+                        <div class="row bg-light p-3 border rounded-1" style="min-height: 185px;">
+                            <div class="col-2" style="min-height: 100%;">
+                                <img src="./images/twitterLogo.svg" alt="" width="25" height="25" class="border rounded-circle">
+                            </div>
+                            <div class="col-10">
+                                <div class="row" style="min-height: 100%">
+                                    <div class="col-12" style="min-height: 30%;">
+                                        Amina Ebele <a href="">@DeliciousAmina</a>
+                                    </div>
+                                    <div class="col-12" style="min-height: 70%;">
+                                        I am now the unofficial <a href="">@Printivo</a> ambassador. What these guys just pulled to ensure I got my menu cards today is stunning!
+                                    </div> 
+                                </div>
+                            </div>          
+                        </div>
+                    </div>
+                        
+                    
+                    <div>
+                        <div class="row bg-light p-3 border rounded-1" style="min-height: 185px;">
+                            <div class="col-2" style="min-height: 100%;">
+                                <img src="./images/twitterLogo.svg" alt="" width="25" height="25" class="border rounded-circle">
+                            </div>
+                            <div class="col-10">
+                                <div class="row" style="min-height: 100%">
+                                    <div class="col-12" style="min-height: 30%;">
+                                        Oluwatosin <a href="">@tosingirlfx</a>
+                                    </div>
+                                    <div class="col-12" style="min-height: 70%;">
+                                        <a href="">@Printivo</a> delivered my mugs in 24hrs. Thank you so much! It's nice doing business with you. More to come.
+                                    </div> 
+                                </div>
+                            </div>          
+                        </div>
+                    </div>
+                    
+                    
+                    <div>
+                        <div class="row bg-light p-3 border rounded-1" style="min-height: 185px;">
+                            <div class="col-2" style="min-height: 100%;">
+                                <img src="./images/twitterLogo.svg" alt="" width="25" height="25" class="border rounded-circle">
+                            </div>
+                            <div class="col-10">
+                                <div class="row" style="min-height: 100%">
+                                    <div class="col-12" style="min-height: 30%;">
+                                        Oluwatosin <a href="">@olgablark</a> 
+                                    </div>
+                                    <div class="col-12" style="min-height: 70%;">
+                                        These guys <a href="">@Printivo</a> are really awesome and affordable. Excellent customer service and delivery too. Thank you.
+                                    </div> 
+                                </div>
+                            </div>          
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- You can count on us -->
+
+    <div class="container-fluid bg-light">
+        <div class="row align-items-center" style="min-height: 350px;">
+            <div class="me-auto ms-auto" id="productSec">
+                <div class="col-12" style="font-size: 30px;">You can count on us for:</div>
+                <div class="col-12 col-12 container-fluid d-flex justify-content-between py-4 align-items-center flex-column flex-lg-row" style="gap: 30px;">
+                    <div>
+                        <div class="row bg-light" style="min-height: 120px;">
+                            <div class="col-3" style="min-height: 100%;">
+                                <img src="./images/fastTurn.svg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-9">
+                                <div class="row" style="min-height: 100%">
+                                    <div class="col-12" style="min-height: 30%;">
+                                        Fast Turnaround Within Days
+                                    </div>
+                                    <div class="col-12" style="min-height: 70%;">
+                                        Your order gets to you within 3-7 working days via DHL or our very own Printivo Direct.
+                                    </div> 
+                                </div>
+                            </div>          
+                        </div>
+                    </div>
+                        
+                    
+                    <div>
+                        <div class="row bg-light" style="min-height: 120px;">
+                            <div class="col-3" style="min-height: 100%;">
+                                <img src="./images/topQuality.svg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-9">
+                                <div class="row" style="min-height: 100%">
+                                    <div class="col-12" style="min-height: 30%;">
+                                        100% Top Quality
+                                    </div>
+                                    <div class="col-12" style="min-height: 70%;">
+                                        Only the finest materials, machines and people will be involved in fulfilling your order.
+                                    </div> 
+                                </div>
+                            </div>          
+                        </div>
+                    </div>
+                    
+                    
+                    <div>
+                        <div class="row bg-light" style="min-height: 120px;">
+                            <div class="col-3" style="min-height: 100%;">
+                                <img src="./images/AffordServ.svg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-9">
+                                <div class="row" style="min-height: 100%">
+                                    <div class="col-12" style="min-height: 30%;">
+                                        Affordable Services 
+                                    </div>
+                                    <div class="col-12" style="min-height: 70%;">
+                                        All products are adequately priced to ensure you get value for your money at all times.
+                                    </div> 
+                                </div>
+                            </div>          
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our amazing services got noticed by -->
+
+    <div class="container-fluid" >
+        <div class="row align-items-center " style="min-height: 300px;">
+            <div class="me-auto ms-auto" id="productSec">
+                <div class="col-12" style="font-size: 30px;">
+                    Our amazing work got noticed by:
+                </div>
+                <div class="col-12 d-flex justify-content-between py-3 flex-wrap" style="gap: 20px;">
+                    <div class="">
+                        <img src="./images/techCrunch.svg" alt=""> <br>
+                        <a href="">Read the article here</a>
+                    </div>
+                    <div class="">
+                        <img src="./images/forbes.svg" alt=""> <br>
+                        <a href="">Read the article here</a>
+                    </div>
+                    <div class="">
+                        <img src="./images/Techpoint_Logo_ucyvgg.png" alt=""> <br>
+                        <a href="">Read the article here</a>
+                    </div>
+                    <div class="">
+                        <img src="./images/techCabal.svg" alt=""> <br>
+                        <a href="">Read the article here</a>
+                    </div>
+                    <div class="">
+                        <img src="./images/cnn.svg" alt=""> <br>
+                        <a href="">Read the article here</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid text-light" style="background-color: #384A62;">
+        <div class="row align-items-center" style="min-height: 400px;">
+            <div class="me-auto ms-auto" id="productSec">
+                <div class="col-12 d-flex justify-content-between flex-wrap p-3" style="gap: 20px;">
+                    <div class="" id="footerText">
+                        <h4>Printivo</h4>
+                        <a href=""><p>About Us</p></a>
+                        <a href=""><p>Contact</p></a>
+                        <a href=""><p>Track Order</p></a>
+                        <a href=""><p>Printivo Promise</p></a>
+                        <a href=""><p>Printivo Blog</p></a>
+                        <a href=""><p>Career</p></a>
+                    </div>
+                    <div class="" id="footerText">
+                        <h4>Help and Information</h4>
+                        <a href=""><p>Paper Quality</p></a>
+                        <a href=""><p>Privacy Policy</p></a>
+                        <a href=""><p>Terms and Conditions</p></a>
+                        <a href=""><p>Font Licenses</p></a>
+                        <a href=""><p>Shipping and Delivery</p></a>
+                    </div>
+                    <div class="" id="footerText">
+                        <h4>Make Money</h4>
+                        <a href=""><p>Refer a friend & earn N1,000</p></a>
+                        <a href=""><p>Become a Reseller</p></a>
+                        <a href=""><p>Sell your Designs</p></a>
+                        <a href=""><p>Merch Store</p></a>
+                    </div>
+                    <div class="" id="footerText">
+                        <h4 class="text-light">Follow Us</h4>
+                        <a href=""><img src="./images/fbLogo.svg" alt=""></a>
+                        <a href=""><img src="./images/twitterLogoWhite.svg" alt=""></a>
+                        <a href=""><img src="./images/linkLogo.svg" alt=""></a>
+                        <a href=""><img src="./images/instaLogo.svg" alt=""></a>
+                        <h4 class="text-light mt-5">Accepted Payments</h4>
+                        <img src="./images/visa.png" alt="" class="img-fluid">
+                        <h4 class="text-light mt-5">Delivery</h4>
+                        <img src="./images/shipping.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Below Footer -->
+    <div class="">
+        <div class="col-12 d-flex justify-content-center align-items-center" style="min-height: 85px;">
+            Copyright © 2021 Printivo. All rights reserved.
+        </div>
+    </div>
+    <script src="bootstrap.bundle.js"></script>
+    <script>
+        function myFunction() {
+            var pix = htmBoss.scrollTop;
+                if (pix > 50) {
+                    stickyNav.style.display = "block"
+                } else {
+                    stickyNav.style.display = "none"
+                }
+        }
+    </script>
+</body>
+</html>
